@@ -1,0 +1,508 @@
+<!doctype html>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>NEMEA | Hyrox and fitness box</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link href="src/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&amp;family=Inter:wght@300;400;600;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#FF0000",
+              "background-light": "#F8F8F8",
+              "background-dark": "#0A0A0A",
+            },
+            fontFamily: {
+              display: ["Oswald", "sans-serif"],
+              body: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0px", // Keeping the rugged, industrial feel
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-body selection:bg-primary selection:text-white"
+  >
+    <nav
+      class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4 flex justify-between items-center"
+    >
+      <div class="flex items-center space-x-2">
+        <div
+          class="w-8 h-8 bg-primary flex items-center justify-center font-display font-black text-xl italic"
+          style="
+            background-image: url(&quot;src/img/ logo-piccolo.png&quot;);
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <!-- img alt="Nemea logo" class="w-6 h-6" src="src/img/ logo-piccolo.png"/-->
+        </div>
+        <span
+          class="font-display text-2xl tracking-tighter font-bold uppercase text-white"
+          >Nemea</span
+        >
+      </div>
+      <div
+        class="hidden md:flex space-x-8 font-display text-sm tracking-widest uppercase text-white"
+      >
+        <a class="hover:text-primary transition" href="#about">Su di noi</a>
+        <a class="hover:text-primary transition" href="#coaches">Coaches</a>
+        <a class="hover:text-primary transition" href="#courses">Corsi</a>
+        <a class="hover:text-primary transition" href="#schedule">Orari</a>
+        <a class="hover:text-primary transition" href="#location">Location</a>
+      </div>
+      <a
+        class="bg-primary hover:bg-red-700 text-white px-6 py-2 font-display text-sm tracking-widest uppercase transition-all"
+        href="#contact"
+        >unisciti a noi</a
+      >
+    </nav>
+    <header
+      class="h-fit md:h-screen items-end md:items-center overflow-hidden bg-cover pt-20 bg-fixed"
+      style="background-image: url(&quot;src/img/sfondo-principale.jpg&quot;)"
+    >
+      <div class="container md:flex mx-auto px-3 z-10 pb-20">
+        <div
+          class="h-fit flex items-center bg-black/80 backdrop-blur-md p-10 mb-3 md:hidden"
+        >
+          <img src="src/img/logo-bianco.png" alt="Nemea Logo" />
+        </div>
+        <div
+          class="max-w-3xl bg-black/80 backdrop-blur-md p-10 md:mt-[600px] md:absolute md:bottom-5 md:right-5"
+        >
+          <span class="red-box-title text-2xl md:text-4xl mb-6"
+            >PRIMO CENTRO AFFILIATO HYROX A PERUGIA</span
+          >
+          <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-xl font-light">
+            Corsi di HYROX, Crosstraining, Functional Training e molto altro.
+            Allenati con i migliori coach in un ambiente unico e stimolante.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-10 py-4 font-display text-lg tracking-widest uppercase transition-all text-center"
+              href="#courses"
+              >PARTECIPA AD UNA CLASSE</a
+            >
+            <a
+              class="border-2 border-white hover:border-red-700 px-10 py-4 font-display text-lg tracking-widest uppercase transition-all text-center text-white"
+              href="#contact"
+              >Maggiori Info</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bg-background-dark text-white">
+      <section class="py-24 border-t border-white/5" id="about">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <span class="red-box-title mb-8">SEI PRONTO?</span>
+              <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                <b>NEMEA</b>. Cura ogni dettaglio del tuo lavoro insieme al
+                nostro teeam. Perche L'eccellenza nasce dall'attenzione. Corsi
+                di
+                <a
+                  href="https://hyroxitaly.com/"
+                  class="underline text-red-600 hover:text-white"
+                >
+                  HYROX
+                </a>
+                , Crosstraining, Functional Training by
+                <a
+                  href="https://www.bodymechanics.it/"
+                  class="underline text-red-600 hover:text-white"
+                  >Ingemar Body Mechanics</a
+                >
+                . Allenati con i migliori coach in un ambiente unico e
+                stimolante.
+              </p>
+			  <a href="#courses">
+              <button
+                class="border border-primary text-primary px-6 py-2 font-display text-sm uppercase tracking-widest hover:bg-primary hover:text-white transition"
+              >
+                Esplora i nostri corsi
+              </button>
+			  </a>
+            </div>
+            <div class="relative group overflow-hidden">
+              <img
+                alt="Crowded gym workout session"
+                class="bw-filter w-full h-80 object-cover grayscale brightness-75 group-hover:brightness-200 transition duration-500"
+                src="src/img/nemea-felpa.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 bg-zinc-950" id="coaches">
+        <div class="container mx-auto px-6">
+          <span class="red-box-title mb-12">CONOSCI I NOSTRI COACH</span>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+            <div class="relative group h-[500px] overflow-hidden">
+              <img
+                alt="Coach profile"
+                class="w-full h-full object-cover grayscale group-hover:scale-105 transition duration-500"
+                src="src/img/foto_nemea/matteo.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 group-hover:bg-primary/80 transition duration-300 flex flex-col justify-end p-8"
+              >
+                <h3 class="font-display text-4xl font-bold uppercase">
+                  Matteo Stoppaccioli
+                </h3>
+                <p
+                  class="text-sm tracking-widest uppercase text-white/80 group-hover:text-white"
+                >
+                  Crosstraining &amp; Functional &amp; Hyrox
+                </p>
+                <div
+                  class="h-0 group-hover:h-12 overflow-hidden transition-all duration-300 mt-4"
+                >
+                  <p class="text-xs uppercase tracking-tighter">
+                    Crossfit L1, Functional Trainer STHLN, Trainer FIPE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative group h-[500px] overflow-hidden">
+              <img
+                alt="Coach profile"
+                class="w-full h-full object-cover grayscale group-hover:scale-105 transition duration-500"
+                src="src/img/foto_nemea/giulio.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 group-hover:bg-primary/80 transition duration-300 flex flex-col justify-end p-8"
+              >
+                <h3 class="font-display text-4xl font-bold uppercase">
+                  Giulio Magnoni
+                </h3>
+                <p
+                  class="text-sm tracking-widest uppercase text-white/80 group-hover:text-white"
+                >
+                  Crosstraining &amp; Functional
+                </p>
+                <div
+                  class="h-0 group-hover:h-12 overflow-hidden transition-all duration-300 mt-4"
+                >
+                  <p class="text-xs uppercase tracking-tighter">
+                    Functional Trainer STHLN, Trainer FIPE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative group h-[500px] overflow-hidden">
+              <img
+                alt="Coach profile"
+                class="w-full h-full object-cover grayscale group-hover:scale-105 transition duration-500"
+                src="src/img/foto_nemea/simone.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 group-hover:bg-primary/80 transition duration-300 flex flex-col justify-end p-8"
+              >
+                <h3 class="font-display text-4xl font-bold uppercase">
+                  Simone Scapicchi
+                </h3>
+                <p
+                  class="text-sm tracking-widest uppercase text-white/80 group-hover:text-white"
+                >
+                  Crosstraining &amp; Functional
+                </p>
+                <div
+                  class="h-0 group-hover:h-12 overflow-hidden transition-all duration-300 mt-4"
+                >
+                  <p class="text-xs uppercase tracking-tighter">
+                    Functional Trainer STHLN, Trainer FIPE
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative group h-[500px] overflow-hidden">
+              <img
+                alt="Coach profile"
+                class="w-full h-full object-cover grayscale group-hover:scale-105 transition duration-500"
+                src="src/img/foto_nemea/francesco.jpg"
+              />
+              <div
+                class="absolute inset-0 bg-black/40 group-hover:bg-primary/80 transition duration-300 flex flex-col justify-end p-8"
+              >
+                <h3 class="font-display text-4xl font-bold uppercase">
+                  Francesco Testi
+                </h3>
+                <p
+                  class="text-sm tracking-widest uppercase text-white/80 group-hover:text-white"
+                >
+                  Hyrox
+                </p>
+                <div
+                  class="h-0 group-hover:h-12 overflow-hidden transition-all duration-300 mt-4"
+                >
+                  <p class="text-xs uppercase tracking-tighter">
+                    Trainer FIPE, Hyrox coach &amp; athlete, Trail Athlete
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-24 border-t border-white/5" id="courses">
+        <div class="container mx-auto px-6">
+          <span class="red-box-title mb-12">LE NOSTRE CLASSI</span>
+          <div class="grid md:grid-cols-3 gap-8 flex">
+            <div class="group h-full flex flex-col">
+              <div class="relative overflow-hidden aspect-video mb-6">
+                <img
+                  alt="Strength course"
+                  class="w-full h-full object-cover bw-filter"
+                  src="src/img/foto_nemea/hyrox.jpg"
+                />
+              </div>
+              <h4 class="font-display text-3xl font-bold uppercase mb-2">
+                HYROX CLASS
+              </h4>
+              <p class="text-gray-400 mb-6 font-light flex-grow">
+                Hyrox è la nuova frontiera del fitness agonistico: è una gara di
+                fitness indoor che combina il running con stazioni di
+                allenamento funzionale. È pensato per essere "lo sport per
+                tutti".
+              </p>
+			  <a href="#contact" >
+              <button
+                class="w-full bg-primary py-3 font-display uppercase tracking-widest hover:bg-red-700 transition"
+              >
+                Prenota ora
+              </button>
+			  </a>
+            </div>
+            <div class="group h-full flex flex-col">
+              <div class="relative overflow-hidden aspect-video mb-6">
+                <img
+                  alt="HIIT course"
+                  class="w-full h-full object-cover bw-filter"
+                  src="src/img/crosstraining.jpg"
+                />
+              </div>
+              <h4 class="font-display text-3xl font-bold uppercase mb-2">
+                CROSSTRAINING CLASS
+              </h4>
+              <p class="text-gray-400 mb-6 font-light flex-grow">
+                Il Cross Training è il "motore" perfetto per chi vuole un fisico
+                atletico, funzionale e pronto a tutto. Inoltre offriamo una
+                programmazione specifica per competitor.
+              </p>
+			  <a href="#contact" > 
+			  <button
+                class="w-full bg-primary py-3 font-display uppercase tracking-widest hover:bg-red-700 transition"
+              >
+                Prenota ora
+              </button>
+			  </a>
+            </div>
+            <div class="group h-full flex flex-col">
+              <div class="relative overflow-hidden aspect-video mb-6">
+                <img
+                  alt="Endurance course"
+                  class="w-full h-full object-cover bw-filter"
+                  src="src/img/functional.jpg"
+                />
+              </div>
+              <h4 class="font-display text-3xl font-bold uppercase mb-2">
+                FUNCTIONAL CLASS
+              </h4>
+              <p class="text-gray-400 mb-6 font-light flex-grow">
+                Il Functional Training è l’essenza del movimento naturale.
+                L'obiettivo è semplice: renderti più forte, agile e resistente
+                nella vita di tutti i giorni e nello sport.
+              </p>
+			  <a href="#contact">
+              <button
+                class="w-full bg-primary py-3 font-display uppercase tracking-widest hover:bg-red-700 transition"
+              >
+                Prenota ora
+              </button>
+			  </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="schedule" class="py-24 border-t border-white/5">
+        <div class="container mx-auto px-6">
+          <span class="red-box-title mb-12">PALINSESTO</span>
+          <div class="grid grid-cols-3 gap-8">
+            <div>
+              <img src="src/img/1-pal.jpeg" alt="Schedule image" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <img src="src/img/2-pal.jpeg" alt="Schedule image" class="w-full h-full object-cover" />
+            </div>
+            <div>
+              <img src="src/img/3-pal.jpeg" alt="Schedule image" class="w-full h-full object-cover" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-black/40 py-24 text-white text-center border-y border-white/5"
+        id="contact"
+      >
+        <div class="container mx-auto px-6 max-w-2xl">
+          <h2
+            class="font-display text-4xl md:text-5xl font-black uppercase mb-6 leading-tight"
+          >
+            Scrivici direttamente sui nostri social!
+          </h2>
+          <p class="mb-12 font-display text-xl uppercase tracking-widest">
+            Scrivici per prenotare una classe oppure per richiedere maggiori info.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              class="bg-pink-600 hover:bg-pink-700 text-white px-10 py-4 font-display text-lg tracking-widest uppercase transition-all text-center flex items-center justify-center"
+              href="https://www.instagram.com/direct/t/17841405338626228"
+              target="_blank"
+            >
+              <i class="fab fa-instagram mr-2"></i> Instagram
+            </a>
+            <a
+              class="bg-green-600 hover:bg-green-700 text-white px-10 py-4 font-display text-lg tracking-widest uppercase transition-all text-center flex items-center justify-center"
+              href="https://wa.me/393475763563?text=Ciao%2C%20vorrei%20saperne%20di%20pi%C3%B9%20sui%20vostri%20corsi"
+              target="_blank"
+            >
+              <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary py-24 text-white text-center" id="newsletter">
+        <div class="container mx-auto px-6 max-w-2xl">
+          <h2
+            class="font-display text-4xl md:text-5xl font-black uppercase mb-6 leading-tight"
+          >
+            Oppure inviaci una mail
+          </h2>
+          <p class="mb-12 font-display text-xl uppercase tracking-widest">
+            Richiedi la tua prova gratuita, partecipa ad una delle nostre classi ed unisciti alla community!
+          </p>
+          <form id="contactForm" class="space-y-4">
+            <input
+              class="bg-black/20 border-white/30 placeholder-white/60 focus:ring-black p-4 w-full text-white uppercase font-display tracking-widest"
+              placeholder="OGGETTO"
+              type="text"
+              id="subject"
+              name="subject"
+            />
+            <textarea
+              class="bg-black/20 border-white/30 placeholder-white/60 focus:ring-black p-4 w-full text-white uppercase font-display tracking-widest"
+              placeholder="Messaggio"
+              id="message"
+              name="message"
+              rows="5"
+            ></textarea>
+            <button
+              class="w-full bg-black text-white font-display text-xl py-4 uppercase tracking-widest hover:bg-zinc-800 transition"
+              type="submit"
+            >
+              Invia email
+            </button>
+          </form>
+        </div>
+      </section>
+      <section class="py-24 border-t border-white/10" id="location">
+        <div class="container mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12">
+            <div>
+              <div class="mb-12">
+                <div class="flex items-center space-x-2 mb-8">
+                  <div
+                    class="w-12 h-12 bg-primary flex items-center justify-center font-display font-black text-3xl italic bg-cover bg-center"
+                    style="background-image: url('src/img/_logo-piccolo.webp');"
+                    >
+                  </div>
+                  <span
+                    class="font-display text-4xl tracking-tighter font-bold uppercase"
+                    >Nemea</span
+                  >
+                </div>
+                	<p class="text-gray-400 mb-8 max-w-sm">
+									Via della Scienza, 17<br/>
+									06135, Perugia PG<br/><br/>
+									Simone: +39 3922577142<br/>
+									Matteo: +39 3299379704<br/>
+									Email: nemeapower@gmail.com <br/><br/>
+									<span class="text-white font-bold">LUN - VEN:</span> 7:00 - 20:00<br/>
+									<span class="text-white font-bold">SAT </span> 10:00 - 13:00
+								</p>
+                <div class="flex space-x-4"></div>
+              </div>
+            </div>
+            <div class="h-96 bg-zinc-900 relative grayscale">
+              <iframe
+                allowfullscreen=""
+                class="w-full h-full border-0 grayscale invert opacity-50"
+                loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.1967496325774!2d12.43585977736592!3d43.07935878935405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e9f305c71583b%3A0x4d33784f4c9db414!2sNemea%20Perugia!5e0!3m2!1sit!2sit!4v1770237043517!5m2!1sit!2sit"
+              >
+              </iframe>
+              <div class="absolute top-4 right-4">
+                <span class="red-box-title">VIENI A TROVARCI</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 border-t border-white/5 opacity-50">
+        <div class="container mx-auto px-6">
+          <div
+            class="flex flex-wrap justify-between items-center gap-8 grayscale brightness-200"
+          >
+            <span class="font-display text-2xl font-black">FlexorLab Perugia</span>
+            <span class="font-display text-2xl font-black italic"
+              >GLADIUS</span
+            >
+            <span class="font-display text-2xl font-black">Stamina</span>
+            <span class="font-display text-2xl font-black italic">Ingemar Bodymechanics</span>
+            <span class="font-display text-2xl font-black">HYROX</span>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="py-8 bg-black text-center text-[10px] uppercase tracking-widest text-gray-500"
+      >
+        © 2024 Nemea. All rights reserved.
+      </footer>
+    </main>
+    <a
+      class="fixed bottom-8 right-8 bg-primary w-12 h-12 flex items-center justify-center text-white hover:bg-red-700 transition-all z-50"
+      href="#"
+    >
+      <span class="material-icons">arrow_upward</span>
+    </a>
+
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

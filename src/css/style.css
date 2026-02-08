@@ -1,0 +1,16 @@
+.bw-filter {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.bw-filter:hover {
+  filter: grayscale(0%);
+}
+.red-box-title {
+  display: inline-block;
+  background-color: #ff0000;
+  padding: 4px 12px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
